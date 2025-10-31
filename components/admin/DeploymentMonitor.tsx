@@ -15,7 +15,6 @@ import {
   Wifi, 
   HardDrive,
   Cpu,
-  Memory,
   AlertCircle,
   CheckCircle,
   Clock,
@@ -360,7 +359,7 @@ export default function DeploymentMonitor() {
                   {metrics.memory.toFixed(1)}%
                 </p>
               </div>
-              <Memory className="h-8 w-8 text-muted-foreground" />
+              <Database className="h-8 w-8 text-muted-foreground" />
             </div>
             <Progress value={metrics.memory} className="mt-2" />
           </CardContent>

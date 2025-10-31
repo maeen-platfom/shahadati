@@ -780,3 +780,5 @@ export function CertificateTracking() {
     </div>
   );
 }
+
+export default CertificateTracking;

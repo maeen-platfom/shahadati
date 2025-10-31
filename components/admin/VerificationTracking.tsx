@@ -1196,3 +1196,5 @@ export function VerificationTracking() {
     </div>
   );
 }
+
+export default VerificationTracking;

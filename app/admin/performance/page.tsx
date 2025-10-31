@@ -21,11 +21,6 @@ import {
   Download
 } from 'lucide-react';
 
-export const metadata = {
-  title: 'مراقبة الأداء | نظام الإدارة',
-  description: 'إدارة ومراقبة أداء منصة شهاداتي',
-};
-
 export default function PerformancePage() {
   return (
     <div className="container mx-auto p-6 space-y-6" dir="rtl">

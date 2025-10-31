@@ -31,7 +31,6 @@ import {
   Database,
   Target,
   TrendingUp,
-  Search,
   Filter,
   Settings
 } from 'lucide-react';
