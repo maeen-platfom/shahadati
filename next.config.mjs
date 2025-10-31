@@ -301,14 +301,6 @@ const nextConfig = {
   //   }
   // },
 
-  // إعدادات متقدمة للإنتاج
-  onError(error: any) {
-    console.error('خطأ في Next.js:', error);
-  },
-
-  onWarning(warning: any) {
-    console.warn('تحذير Next.js:', warning);
-  }
 };
 
 export default nextConfig;

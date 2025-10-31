@@ -284,7 +284,7 @@ export async function decompressData(
   compressedData: Uint8Array,
   algorithm: string = 'gzip'
 ): Promise<any> {
-  let decompressedBuffer: Buffer;
+  let decompressedBuffer: Buffer = Buffer.from('');
   
   switch (algorithm) {
     case 'gzip':
@@ -300,6 +300,10 @@ export async function decompressData(
         decompressedBuffer = await brotliDecompress(Buffer.from(compressedData));
       }
       break;
+      
+    default:
+      // إذا لم يتطابق الخوارزمية، إرجاع البيانات كما هي
+      decompressedBuffer = Buffer.from(compressedData);
   }
   
   const decompressedString = decompressedBuffer.toString('utf8');
