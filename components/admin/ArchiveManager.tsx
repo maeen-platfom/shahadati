@@ -72,7 +72,7 @@ export default function ArchiveManager({ className = '' }: ArchiveManagerProps) 
     id: string;
     type: 'success' | 'error' | 'warning' | 'info';
     message: string;
-  }>>>([]);
+  }>>([]);
 
   // تحميل البيانات الأولية
   useEffect(() => {

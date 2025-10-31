@@ -528,8 +528,8 @@ export const optimizeDataForExport = (data: any[], maxRecords: number = 10000): 
 // تصدير مجمع متعدد الصيغ
 export const exportMultipleFormats = async (
   exportData: ExportData,
-  formats: ('excel' | 'csv' | 'json' | 'pdf')[]
-): Promise<{ successful: string[]; failed: string[]; duration: number }> {
+  formats: Array<'excel' | 'csv' | 'json' | 'pdf'>
+): Promise<{ successful: string[]; failed: string[]; duration: number }> => {
   const startTime = performance.now();
   const successful: string[] = [];
   const failed: string[] = [];

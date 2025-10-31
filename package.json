@@ -24,6 +24,7 @@
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.19",
     "@types/xlsx": "^0.0.36",
+    "bcryptjs": "^3.0.2",
     "chart.js": "^4.5.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -41,6 +42,7 @@
     "react-pdf": "^10.2.0",
     "recharts": "^3.3.0",
     "tailwind-merge": "^3.3.1",
+    "web-vitals": "^5.1.0",
     "xlsx": "^0.18.5",
     "zod": "^3.22.4",
     "zustand": "^4.5.0"

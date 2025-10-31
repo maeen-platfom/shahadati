@@ -14,6 +14,21 @@ const nextConfig = {
         hostname: 'qnborzrmsqhqidnyntrs.supabase.co'
       }
     ]
+  },
+  webpack: (config, { isServer }) => {
+    // استبعاد canvas من client-side bundle
+    if (!isServer) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        canvas: false,
+      };
+    }
+    
+    // إضافة externals لـ canvas في server-side
+    config.externals = config.externals || [];
+    config.externals.push('canvas');
+    
+    return config;
   }
 };
 
