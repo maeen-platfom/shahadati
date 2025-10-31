@@ -1,11 +1,6 @@
-import TemplateManagement from '@/components/admin/TemplateManagement'
-import { Metadata } from 'next'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'إدارة القوالب - إدارة شهاداتي',
-  description: 'إدارة قوالب الشهادات - إنشاء وتحرير ومتابعة استخدام القوالب',
-  keywords: ['قوالب', 'شهادات', 'إدارة', 'تحرير', 'إنشاء'],
-}
+import TemplateManagement from '@/components/admin/TemplateManagement'
 
 export default function TemplatesPage() {
   return (

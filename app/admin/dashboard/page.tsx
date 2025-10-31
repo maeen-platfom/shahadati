@@ -1,11 +1,6 @@
-import AdminDashboard from '@/components/admin/AdminDashboard'
-import { Metadata } from 'next'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'لوحة التحكم - إدارة شهاداتي',
-  description: 'لوحة تحكم شاملة لمشرفي منصة شهاداتي لإدارة النظام ومراقبة الأداء',
-  keywords: ['لوحة تحكم', 'إدارة', 'شهادات', 'مشرف', 'نظام'],
-}
+import AdminDashboard from '@/components/admin/AdminDashboard'
 
 export default function AdminDashboardPage() {
   return (

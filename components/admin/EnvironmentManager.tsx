@@ -11,7 +11,7 @@ import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { 
-  Environment, 
+  Globe, 
   Key, 
   Lock, 
   Eye, 
@@ -324,7 +324,7 @@ export default function EnvironmentManager() {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Environment className="h-5 w-5" />
+            <Globe className="h-5 w-5" />
             مدير متغيرات البيئة
           </CardTitle>
           <CardDescription>

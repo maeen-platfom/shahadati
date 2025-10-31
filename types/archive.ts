@@ -38,6 +38,18 @@ export interface ArchiveSettings {
   maxArchiveSize: number; // بالميجابايت
 }
 
+// إعدادات افتراضية للأرشيف
+export const DEFAULT_ARCHIVE_SETTINGS: ArchiveSettings = {
+  autoArchiveEnabled: false,
+  archiveAfterDays: 365,
+  compressionLevel: 'medium',
+  retentionPeriod: 2555, // 7 سنوات
+  backupEnabled: true,
+  notificationEnabled: true,
+  allowedFileTypes: ['.json', '.pdf', '.jpg', '.png'],
+  maxArchiveSize: 500, // 500MB
+};
+
 // معلومات الملف المؤرشف
 export interface ArchivedFile {
   id: string;

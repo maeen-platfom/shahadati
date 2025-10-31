@@ -1,11 +1,6 @@
-import ActivityLogs from '@/components/admin/ActivityLogs'
-import { Metadata } from 'next'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'سجلات الأنشطة - إدارة شهاداتي',
-  description: 'مراجعة وتتبع جميع الأنشطة والعمليات في النظام - سجلات تفصيلية',
-  keywords: ['سجلات', 'أنشطة', 'مراقبة', 'أمان', 'تتبع'],
-}
+import ActivityLogs from '@/components/admin/ActivityLogs'
 
 export default function ActivityLogsPage() {
   return (

@@ -18,7 +18,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Switch } from '@/components/ui/switch';
 import { Progress } from '@/components/ui/progress';
 import { 
-  Query,
+  Search,
   Zap,
   Clock,
   CheckCircle,
@@ -190,7 +190,7 @@ export default function QueryOptimizer({
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center space-x-2 space-x-reverse">
-            <Query className="h-5 w-5" />
+            <Search className="h-5 w-5" />
             <span>محلل الاستعلامات الذكي</span>
           </CardTitle>
           <CardDescription>
@@ -499,7 +499,7 @@ export default function QueryOptimizer({
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center space-x-2 space-x-reverse">
-              <Query className="h-5 w-5 text-blue-500" />
+              <Search className="h-5 w-5 text-blue-500" />
               <div>
                 <p className="text-sm text-gray-600">إجمالي الاستعلامات</p>
                 <p className="text-xl font-bold">1,247</p>

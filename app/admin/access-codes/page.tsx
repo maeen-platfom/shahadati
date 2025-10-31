@@ -1,11 +1,6 @@
-import AccessCodeManagement from '@/components/admin/AccessCodeManagement'
-import { Metadata } from 'next'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'إدارة رموز الوصول - إدارة شهاداتي',
-  description: 'إدارة رموز الوصول والمستخدمين - إنشاء وإدارة وتتبع رموز الوصول',
-  keywords: ['رموز وصول', 'مستخدمين', 'إدارة', 'أمان', 'صلاحيات'],
-}
+import AccessCodeManagement from '@/components/admin/AccessCodeManagement'
 
 export default function AccessCodesPage() {
   return (

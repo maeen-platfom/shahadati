@@ -1,11 +1,6 @@
-import VerificationTracking from '@/components/admin/VerificationTracking'
-import { Metadata } from 'next'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'تتبع التحققات - إدارة شهاداتي',
-  description: 'تتبع ومراقبة عمليات التحقق من الشهادات - تحليلات الأمان والإحصائيات',
-  keywords: ['تحقق', 'أمان', 'شهادات', 'مراقبة', 'تتبع'],
-}
+import VerificationTracking from '@/components/admin/VerificationTracking'
 
 export default function VerificationPage() {
   return (

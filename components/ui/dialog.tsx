@@ -67,9 +67,38 @@ const DialogDescription = React.forwardRef<
 ))
 DialogDescription.displayName = "DialogDescription"
 
+const DialogContent = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn("relative bg-background p-6 shadow-lg rounded-lg", className)}
+    {...props}
+  />
+))
+DialogContent.displayName = "DialogContent"
+
+const DialogTrigger = React.forwardRef<
+  HTMLButtonElement,
+  React.ButtonHTMLAttributes<HTMLButtonElement>
+>(({ className, ...props }, ref) => (
+  <button
+    ref={ref}
+    className={cn(
+      "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+      className
+    )}
+    {...props}
+  />
+))
+DialogTrigger.displayName = "DialogTrigger"
+
 export {
   Dialog,
   DialogHeader,
   DialogTitle,
   DialogDescription,
+  DialogContent,
+  DialogTrigger,
 }

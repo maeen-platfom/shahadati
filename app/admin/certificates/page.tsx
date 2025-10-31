@@ -1,11 +1,6 @@
-import CertificateTracking from '@/components/admin/CertificateTracking'
-import { Metadata } from 'next'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'تتبع الشهادات - إدارة شهاداتي',
-  description: 'تتبع ومراقبة جميع الشهادات الصادرة - إحصائيات ومعلومات مفصلة',
-  keywords: ['شهادات', 'تتبع', 'إحصائيات', 'مراقبة', 'تقارير'],
-}
+import CertificateTracking from '@/components/admin/CertificateTracking'
 
 export default function CertificatesPage() {
   return (

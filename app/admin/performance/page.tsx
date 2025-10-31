@@ -1,3 +1,5 @@
+'use client'
+
 import PerformanceMonitor from '@/components/admin/PerformanceMonitor';
 import CacheSettings from '@/components/admin/CacheSettings';
 import DatabaseOptimizer from '@/components/admin/DatabaseOptimizer';
