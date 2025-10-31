@@ -4,17 +4,6 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   
-  // تحسين الأداء
-  experimental: {
-    optimizeCss: true,
-    optimizePackageImports: [
-      'lucide-react',
-      '@radix-ui/react-dropdown-menu',
-      '@radix-ui/react-dialog',
-      '@radix-ui/react-tabs'
-    ]
-  },
-  
   // إعدادات الـ Image optimization
   images: {
     formats: ['image/webp', 'image/avif'],
